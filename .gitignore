@@ -1,4 +1,4 @@
 
 
 # folder to ignore
-./workspace/node_modules/
+workspace/node_modules/
