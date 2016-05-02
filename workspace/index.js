@@ -11,20 +11,6 @@ app.get('/', function(req, res){ //route 메서드들은 위에서부터 순서�
   res.status(200);
   res.sendFile(__dirname +  '/public/home.html');
 });
-/*
-app.get('/*.js', function(req, res){
-  console.log(req.url);
-  res.type('text/javascript');
-  res.status(200);
-  res.sendFile(__dirname + '/public/' + req.url);
-});
-app.get('/apple.csv', function(req, res){
-  console.log(req.url);
-  res.type('text/csv');
-  res.status(200);
-  res.sendFile(__dirname + '/public/' + req.url);
-});
-*/
 
 app.use(function(req,res){//반드시 get 밑에 있어야한다.
   res.type('text/plain');
