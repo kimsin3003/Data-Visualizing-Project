@@ -1,19 +1,31 @@
 var express = require('express');
 var app = express();
+var mysql = require('mysql');
 
 app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
+app.set('view engine', 'ejs');
+
+var pool = mysql.createPool({
+  connectionLimit : 10,
+  host : 'localhost',
+  user : 'root',
+  password : 'xodn**26',
+  database : 'nodeproject'
+});
 
 app.get('/', function(req, res){ //route 메서드들은 위에서부터 순서대로 검사하다가 먼저걸리는 것에 들어간다.
   console.log(req.url);
   res.type('text/html');
   res.status(200);
-  res.sendFile(__dirname +  '/public/home.html');
+  res.render('home');
 });
 
 app.get('/data', function(req, res){
-  res.send('fuck you');
+  pool.query('SELECT * from google where Date > \'2015-08-19\'', function(err, rows, fields) {
+    res.send(rows);
+  });
 });
 
 app.use(function(req,res){//반드시 get 밑에 있어야한다.

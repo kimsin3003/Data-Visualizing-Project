@@ -24,5 +24,9 @@ d3.csv("./apple.csv", function(error, data) {
 */
 
 d3.xhr('/data', function(XMLReq){
-  console.log(XMLReq);
+  dataSet = JSON.parse(XMLReq.response);
+  d3.select("body").data(dataSet).enter().append("div").classed("bar", true).text(function(d){ console.log(d.Date); return d.Date; }).style("height", function(d){
+
+    return d.Price / 10 + "px";
+  });
 });
