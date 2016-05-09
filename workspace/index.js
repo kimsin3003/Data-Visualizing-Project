@@ -12,6 +12,10 @@ app.get('/', function(req, res){ //route 메서드들은 위에서부터 순서�
   res.sendFile(__dirname +  '/public/home.html');
 });
 
+app.get('/data', function(req, res){
+  res.send('fuck you');
+});
+
 app.use(function(req,res){//반드시 get 밑에 있어야한다.
   res.type('text/plain');
   res.status('404');
