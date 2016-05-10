@@ -22,6 +22,11 @@ app.get('/', function(req, res){ //route 메서드들은 위에서부터 순서�
   res.render('home');
 });
 
+
+app.get('/visualize', function(req, res){
+  res.render('visualize');
+})
+
 app.get('/data', function(req, res){
   pool.query('SELECT * from google where Date > \'2015-08-19\'', function(err, rows, fields) {
     res.send(rows);

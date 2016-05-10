@@ -1,7 +1,28 @@
+@font-face {
+    font-family: riesling;
+    src: url("./riesling.ttf");
+}
+
+body {
+  background-size : 100%;
+  background-image: url(./wallstreet.jpg);
+  padding-top: 30%;
+  padding-left: 25%;
+}
 
 div.bar {
   display: inline-block;
   width: 50px;
   background-color: blue;
   margin-right: 1px;
+}
+
+#search-form {
+  width: 100%;
+  height: 100%;
+}
+
+.input-layout div{
+  width: 80px;
+  display: inline-block;
 }
