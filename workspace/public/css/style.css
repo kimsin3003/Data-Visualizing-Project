@@ -12,3 +12,82 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+#home_body {
+  background-size : 100%;
+  background-color: #443266;
+  padding-top:0;
+  padding-left: 0;
+}
+
+#visualizing_body {
+  background-size : 100%;
+  background-image: url("./black_bg.jpg");
+  padding-top:0;
+  padding-left: 0;
+}
+
+div.bar {
+  display: inline-block;
+  width: 50px;
+  background-color: blue;
+  margin-right: 1px;
+}
+
+.title_bar {
+  background-color: #F1F0FF;
+  padding-left: 110px;
+}
+
+#search-form {
+  position: relative;
+  left: 100px;
+  top: 150px;
+  width: 700px;
+}
+
+
+#result-card {
+  position: relative;
+  left: 100px;
+  top: 40px;
+  width: 1500px;
+  height: 400px;
+}
+
+
+#intro-text {
+  position: relative;
+  left: 100px;
+  top: 60px;
+  font-size: 70px;
+  color: #F1F0FF;
+  font-weight: lighter;
+}
+
+::-webkit-input-placeholder {
+   color: grey !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: grey !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: grey !important;
+}
+
+:-ms-input-placeholder {
+   color: grey !important;
+}
+
+
+#search-form input[type="text"] {
+  margin-left: 10px;
+  width: 30%;
+}
+
+#again-button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
