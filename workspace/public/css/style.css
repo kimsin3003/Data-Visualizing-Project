@@ -42,8 +42,9 @@ div.bar {
 #search-form {
   position: relative;
   left: 100px;
-  top: 150px;
-  width: 700px;
+  top: 100px;
+  width: 50%;
+  height: 50%;
 }
 
 
@@ -51,7 +52,7 @@ div.bar {
   position: relative;
   left: 100px;
   top: 40px;
-  width: 1500px;
+  width: 80%;
   height: 400px;
 }
 
@@ -90,4 +91,19 @@ div.bar {
 #again-button {
   margin-left: 20px;
   margin-bottom: 30px;
+}
+
+#google-tag {
+  width: 100px;
+  background-color: #f50057 !important;
+}
+
+#apple-tag {
+  width: 100px;
+  background-color: #1de9b6 !important;
+}
+
+#samsung-tag {
+  width: 100px;
+  background-color: #0d47a1 !important;
 }
